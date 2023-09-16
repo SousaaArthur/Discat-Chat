@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #192035;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-conteiner{
+    display: flex;
+}
+
+/*Serve bar*/
+.serve-bar{
+    width: 5rem;
+    height: 49.4rem;
+    background-color: #101522;
+}
+
+.channel-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #232b42;
+}
+
+.icon-channel-me{
+    height: 2.6rem;
+    border-radius: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-messages{
+    font-size: 1.8rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #192035;
+    background-color: #7289d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.btn-messages:hover{
+    color: #192035;
+    background-color: #7289d9;
+    border-radius:16px;
+}
+
+.channels-serves{
+    width: 4rem;
+    height: 45.4rem;
+}
+
+.create-server{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #192035;
+    border-radius: 100%;
+    color: #7289d9;
+    margin: 5px 5px 5px 5px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.create-server:hover{
+    color: #192035;
+    background-color: #7289d9;
+    border-radius: 16px;
+}
+
+.fa-plus{
+    font-size: 1.5rem;
+}
+/*Serve bar end*/
+
+/*Conversation bar*/
+.conversation-bar{
+    width: 16rem;
+    height: 49.4;
+    background-color: #161c2e;
+}
+
+.search-bar{
+    width: 100%;
+    height: 3rem;
+    background-color: #161c2e;
+    border-bottom: 2px solid #1f2535;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-search-bar{
+    height: 1.7rem;
+    width: 11rem;
+    background-color: #1e263d;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+}
+
+#main-search-bar p{
+    margin: 10px;
+    color: #4f576b;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa-magnifying-glass{
+    color: #4f576b;
+    margin-left: 4rem;
+}
+
+.friends-chat{
+    height: 43.4rem;
+    width: 100%;
+}
+
+.options{
+    height: 3.2rem;
+    width: 100%;
+    background-color: #111724;
+}
+
+/*End Conversation bar*/
+
+/*Friends bar*/
+
+.friends-bar{
+    width: 100%;
+    height: 49.4rem;
+}
+
+.main-bar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    background-color: #192035;
+    border-bottom: 2px solid #1f2535;
+}
+
+.category-friends{
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    color: #4f576b;
+    border-right: 3px solid #232b42;
+    cursor: default;
+}
+
+.category-friends h2{
+    margin: 0px 5px 0px 0px;
+}
+
+.fa-user-group{
+    font-size: 25px;
+}
+
+.buttons-main-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    width: 100%;
+    margin: 15px;
+    font-size: 16px;
+    color: #4f576b;
+}
+
+.buttons-primary{
+    display: flex;
+    gap: 15px;
+}
+
+.btn-online-friends{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #242a3a;
+    color: #FAFAFA;
+    height: 1.5rem;
+    width: 4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.btn-online-friends:hover{
+    background-color: #383f52;
+    color: #c2c1c1;
+    border-radius: 5px;
+}
+
+.btn-all-friends{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    width: 2.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.btn-all-friends:hover{
+    background-color: #383f52;
+    color: #a3a3a3;
+    border-radius: 5px;
+}
+
+.btn-pending{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    width: 5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.btn-pending:hover{
+    background-color: #383f52;
+    color: #a3a3a3;
+    border-radius: 5px;
+}
+
+.btn-blocked-people{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    width: 5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.btn-blocked-people:hover{
+    background-color: #383f52;
+    color: #a3a3a3;
+    border-radius: 5px;
+}
+
+.btn-add-friends{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    width: 6rem;
+    border-radius: 5px;
+    background-color: #7289d9;
+    color: #FAFAFA;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.btn-add-friends:hover{
+    color: #7289d9;
+    background-color: #FAFAFA;
+}
+
+.buttons-secondary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 25px;
+}
+
+.btn-new-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.8rem;
+    border-right: 3px solid #232b42;
+    cursor: pointer;
+}
+
+.fa-comments{
+    margin: 15px;
+    transition: .6s;
+} 
+
+.fa-comments:hover{
+    color: #cac9c9;
+}
+
+.btn-inbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.8rem;
+    cursor: pointer;
+}
+
+.fa-inbox{
+    transition: .6s;
+} 
+
+.fa-inbox:hover{
+    color: #cac9c9;
+}
+
+.btn-help{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.8rem;
+    cursor: pointer;
+}
+
+.fa-circle-question{
+    transition: .6s;
+} 
+
+.fa-circle-question:hover{
+    color: #cac9c9;
+}
+
+.main-screen{
+    display: flex;
+}
+
+.online-friends{
+    width: 100%;
+    height: 46.4rem;
+    background-color: #192035;
+}
+
+.active-friends{
+    width: 23rem;
+    height: 46.4rem;
+    background-color: #192035;
+    border-left: 2px solid #232b42;
+}
+/*Friends-bar*/
