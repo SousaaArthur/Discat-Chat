@@ -93,7 +93,7 @@ body{
 /*Conversation bar*/
 .conversation-bar{
     width: 16rem;
-    height: 49.4;
+    height: 46.5rem;
     background-color: #161c2e;
 }
 
@@ -131,7 +131,7 @@ body{
 
 .friends-chat{
     position: relative;
-    height: 43.4rem;
+    height: 43.1rem;
     width: 100%;
     z-index: 1;
 }
@@ -261,7 +261,7 @@ body{
     position: relative;
     display: flex;
     align-items: center;
-    height: 2.7rem;
+    height: 3rem;
     width: 100%;
     background-color: #111724;
     z-index: 2;
@@ -607,7 +607,6 @@ body{
 .online-friends{
     width: 100%;
     height: 46.4rem;
-    background-color: #192035;
 }
 
 .friends-search-bar{
@@ -749,9 +748,93 @@ body{
 }
 
 .active-friends{
-    width: 23rem;
+    width: 100%;
     height: 46.4rem;
-    background-color: #192035;
     border-left: 2px solid #232b42;
 }
-/*Friends-bar*/
+
+.category-active{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    height: 2rem;
+    width: 100%;
+    color: #a1a1a1;
+}
+
+.friends-active-now{
+    height: 100%;
+}
+
+@media (max-width: 1366px){
+    .serve-bar{
+        width: 4em;
+    }
+    .conversation-bar{
+        width: 14rem;
+    }
+    .friends-chat{
+
+    }
+    .messages{
+
+    }
+    .main-bar{
+    }
+    .online-friends{
+
+    }
+
+    .friends-bar{
+        width: 70rem;
+    }
+
+    #search-friends-online{
+        
+    }
+    .friends-bar{
+
+    }
+    .friends-online{
+
+    }
+    .active-friends{
+
+    }
+    .friends-active-now{
+
+    }
+}
+
+@media (max-height: 768px){
+    .serve-bar{
+        height: 48rem;
+    }
+    .conversation-bar{
+        height: 48rem;
+    }
+    .friends-chat{
+        height: 41.6rem;
+    }
+    .messages{
+        height: 32rem;
+    }
+    .main-screen{
+        height: 45rem;
+    }
+    .online-friends{
+        height: 45rem;
+    }
+    .friends-bar{
+        height: 48rem;
+    }
+    .friends-online{
+        height: 39rem;
+    }
+    .active-friends{
+        height: 45rem;
+    }
+    .friends-active-now{
+        height: 42em;
+    }
+}
