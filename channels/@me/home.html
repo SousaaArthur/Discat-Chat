@@ -17,7 +17,11 @@
                 </div>
             </div>
             <div class="channels-serves">
-                <div class="create-server">
+                <div class="create-server" id="btnCreateServer">
+                    <div class="floating-text-create-serve">
+                        <div class="triangle"></div>
+                        <p>Add a Server</p>
+                    </div>
                     <i class="fa-solid fa-plus"></i>
                 </div>
             </div>
@@ -129,7 +133,27 @@
                 </div>
             </div>
             <div class="options">
-                <div class="user">
+                <div class="
+                activity-option">
+                    <div class="triangle"></div>
+                    <div class="btn-user-online">
+                        <div class="online"></div>
+                        <p>Online</p>
+                    </div>
+                    <div class="btn-user-idle">
+                        <div class="idle"></div>
+                        <p>Idle</p>
+                    </div>
+                    <div class="btn-user-busy">
+                        <div class="busy"></div>
+                        <p>Busy</p>
+                    </div>
+                    <div class="btn-user-inactive">
+                        <div class="inactive"></div>
+                        <p>Inactive</p>
+                    </div>
+                </div>
+                <div class="user" id="btnActivityOptions">
                     <div class="profile-picture">
                         <div class="user-activity">
                             <div class="user-online"></div>
@@ -184,7 +208,11 @@
                     </div>
                     <div class="buttons-secondary">
                         <div class="btn-new-group">
-                            <i class="fa-solid fa-comments"></i>
+                            <div class="floating-text-btn-new-group">
+                                <div class="triangle"></div>
+                                <p>New Group</p>
+                            </div>
+                            <i class="fa-solid fa-comments" id="btnNewGroup"></i>
                         </div>
                         <div class="btn-inbox">
                             <i class="fa-solid fa-inbox"></i>
@@ -200,7 +228,7 @@
                     <div class="friends-search-bar">
                         <div class="border-search-left"></div>
                         <input type="text" placeholder="Seach" id="search-friends-online">
-                        <div class="border-search-left-right">
+                        <div class="border-search-right">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                     </div>
@@ -291,6 +319,7 @@
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
 
