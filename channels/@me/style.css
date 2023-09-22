@@ -396,11 +396,20 @@ body{
     border-radius: 3px;
     transition: .5s;
     cursor: pointer;
+    color: #6f778a;
+}
+
+.mute-microphone{
+    display: none;
+    position: absolute;
+    height: 2px;
+    width: 1.3rem;
+    background-color: #F78181;
+    transform: rotate(-30deg);
 }
 
 .btn-microphone:hover{
     background-color: #1e2433;
-    color: #6f778a;
 }
 
 .btn-headphone{
@@ -412,11 +421,20 @@ body{
     border-radius: 3px;
     transition: .5s;
     cursor: pointer;
+    color: #6f778a;
+}
+
+.mute-headphone{
+    display: none;
+    position: absolute;
+    height: 2px;
+    width: 1.6rem;
+    background-color: #F78181;
+    transform: rotate(-30deg);
 }
 
 .btn-headphone:hover{
     background-color: #1e2433;
-    color: #6f778a;
 }
 
 .btn-config{
@@ -428,12 +446,18 @@ body{
     border-radius: 3px;
     transition: .5s;
     cursor: pointer;
+    color: #6f778a;
 }
 
 .btn-config:hover{
     background-color: #1e2433;
-    color: #6f778a;
 }
+
+.btn-config .fa-gear:hover{
+    transition: .5s;
+    transform: rotate(-30deg);
+}
+
 
 .activity-option{
     display: none;
@@ -491,10 +515,6 @@ body{
     transition: .5s;
 }
 
-.btn-user-idle:hover{
-    background-color: #232b42;
-}
-
 .btn-user-idle .idle{
     display: block;
     z-index: 999;
@@ -516,10 +536,6 @@ body{
     transition: .5s;
 }
 
-.btn-user-busy:hover{
-    background-color: #232b42;
-}
-
 .btn-user-busy .busy{
     display: block;
     z-index: 999;
@@ -539,10 +555,6 @@ body{
     color: #a3a3a3;
     cursor: pointer;
     transition: .5s;
-}
-
-.btn-user-inactive:hover{
-    background-color: #232b42;
 }
 
 .btn-user-inactive .inactive{
@@ -948,6 +960,277 @@ body{
 
 .friends-active-now{
     height: 100%;
+}
+/*-------------------*/
+
+.user-configuration-panel{
+    display: none;
+    position: absolute;
+    height: 30rem;
+    width: 25rem;
+    margin-left: 15rem;
+    background-color: #111724;
+    border-radius: 8px;
+}
+
+.user-configuration{
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    width: 100%;
+    /*background-color: #F78181;*/
+}
+
+.user-profile-photo{
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.user-profile-photo img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 8px;
+}
+
+.btn-edit-profile-picture{
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    width: 5rem;
+    font-size: 20px;
+    border-radius: 8px;
+    color: #6380ff;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.profile-photo-panel{
+    display: none;
+    position: absolute;
+    height: 23rem;
+    width: 12rem;
+    margin-left: 3.7rem;
+    background-color: #1f263d;
+    border-radius: 10px;
+}
+
+.profile-photo-panel-column-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    height: 5rem;
+    font-size: 22px;
+    color: #FAFAFA;
+}
+
+.take-photo-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 8px;
+    margin: 10px;
+    background-color: #7289d9;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.take-photo-btn:hover{
+    background-color: #FAFAFA;
+    color: #7289d9;
+}
+
+.add-photo-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 8px;
+    margin: 10px;
+    background-color: #7289d9;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.add-photo-btn:hover{
+    background-color: #FAFAFA;
+    color: #7289d9;
+}
+
+.profile-photo-panel-column-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    height: 5rem;
+}
+
+.profile-photo-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 8px;
+    margin: 10px;
+    transition: .5s;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo-1:hover{
+    transform: scale(1.1);
+}
+
+.profile-photo-1 img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 8px;
+}
+
+.profile-photo-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 8px;
+    margin: 10px;
+    transition: .5s;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo-2:hover{
+    transform: scale(1.1);
+}
+
+.profile-photo-2 img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 8px;
+}
+
+
+.profile-photo-panel-column-3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    height: 5rem;
+}
+
+.profile-photo-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 8px;
+    margin: 10px;
+    transition: .5s;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo-3:hover{
+    transform: scale(1.1);
+}
+
+.profile-photo-3 img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 8px;
+}
+
+.profile-photo-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 8px;
+    margin: 10px;
+    transition: .5s;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo-4:hover{
+    transform: scale(1.1);
+}
+
+.profile-photo-4 img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 8px;
+}
+
+.profile-photo-panel-column-4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    height: 5rem;
+}
+
+.profile-photo-5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 8px;
+    margin: 10px;
+    transition: .5s;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo-5:hover{
+    transform: scale(1.1);
+}
+
+.profile-photo-5 img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 8px;
+}
+
+.profile-photo-6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 8px;
+    margin: 10px;
+    transition: .5s;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo-6:hover{
+    transform: scale(1.1);
+}
+
+.profile-photo-6 img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 8px;
 }
 
 @media (max-width: 1366px){
